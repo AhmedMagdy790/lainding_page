@@ -18,13 +18,17 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap justify-center py-10 gap-x-10 lg:gap-x-20 gap-y-5">
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/amazon.png']} alt="Amazon Logo" />
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/company_logo.png']} alt="Company Logo" />
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/hubspot.png']} alt="HubSpot Logo" />
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/netflix.png']} alt="Netflix Logo" />
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/notion.png']} alt="Notion Logo" />
-                    <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/zoom.png']} alt="Zoom Logo" />
+                <div className="flex flex-col lg:flex-row gap-x-15 gap-y-5 py-10 overflow-hidden md:overflow-visible">
+                    <div className="flex gap-x-10 ms-auto lg:ms-0">
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/amazon.png']} alt="Amazon Logo" />
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/company_logo.png']} alt="Company Logo" />
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/hubspot.png']} alt="HubSpot Logo" />
+                    </div>
+                    <div className="flex gap-x-10 me-auto lg:me-0">
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/netflix.png']} alt="Netflix Logo" />
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/notion.png']} alt="Notion Logo" />
+                        <img className="w-30 sm:w-34 lg:w-38 grayscale" src={images['./images/zoom.png']} alt="Zoom Logo" />
+                    </div>
                 </div>
 
 

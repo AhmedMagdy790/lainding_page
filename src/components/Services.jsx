@@ -10,7 +10,7 @@ const Services = () => {
                 <Header title="Services" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam commodi maiores sit odit perferendis iusto nisi quasi unde ducimus, officiis possimus repellat suscipit enim vel, nemo nulla corporis esse similique." />
                 <div className="flex flex-wrap gap-y-5 gap-x-8 mb-30 ">
                     <ServicesCards 
-                        title="Search engine optimiztion" 
+                        title={<>Search engine <br /> optimiztion</>}
                         image={images['./images/services/image6.png']} 
                         href="#" mode="light" />
                      <ServicesCards 
