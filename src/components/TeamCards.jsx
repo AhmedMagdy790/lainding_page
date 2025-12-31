@@ -16,6 +16,12 @@ const TeamCards = ({name, subTitle, description, image, href }) => {
                             w-[120px] h-[120px] 
                             mask-[url(${maskVector})]
                             mask-center mask-no-repeat mask-contain 
+
+                            -webkit-mask-[url(${maskVector})]
+                            -webkit-mask-center -webkit-mask-no-repeat -webkit-mask-contain
+
+                            overflow-hidden
+                            fallback-mask
                             `}>
                       
                         <img 

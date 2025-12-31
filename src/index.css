@@ -11,6 +11,12 @@
         font-family: "Rubik", sans-serif;
     }
 
+    .fallback-mask {
+        mask-image: none;
+        -webkit-mask-image: none;
+        background-clip: content-box;
+    }
+
     :root {
         /* color-scheme: dark; */
         --color-primary: #B9FF66; /* HSL values are often used for easier manipulation */
