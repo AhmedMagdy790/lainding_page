@@ -7,10 +7,11 @@ const TeamCards = ({name, subTitle, description, image, href }) => {
 
 
     return (
-        <div className={`px-5 border border-b-8 rounded-4xl border-color-dark bg-main-color`}>
-
-            <div className="py-8 flex gap-8 border-b border-color-dark">
-                <div className='  filter drop-shadow-[10px_8px_0_rgba(0,0,0)]'>
+      <div
+        className={`px-5 border border-b-8 rounded-4xl border-color-dark bg-main-color`}
+      >
+        <div className="py-8 flex gap-8 border-b border-color-dark">
+          {/* <div className='  filter drop-shadow-[10px_8px_0_rgba(0,0,0)]'>
                     <div className={`
                             relative 
                             w-[120px] h-[120px] 
@@ -32,24 +33,105 @@ const TeamCards = ({name, subTitle, description, image, href }) => {
                         />
 
                         <div className='absolute inset-0 bg-color-primary mix-blend-overlay'></div>
-                    </div>                    
-                </div>
+                    </div>
+                    
+                </div> */}
+          <div className="relative w-[120px] h-[120px] drop-shadow-2xl">
+           
+                <div
+                    className="absolute inset-0 "
+                    style={{
+                    maskImage: `url(${maskVector})`,
+                    WebkitMaskImage: `url(${maskVector})`,
+                    maskRepeat: "no-repeat",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskPosition: "center",
+                    WebkitMaskPosition: "center",
+                    maskSize: "contain",
+                    WebkitMaskSize: "contain",
+                    backgroundColor: "black",
+                    transform: "translate(10px,8px)",
+                    zIndex: 1,
+                    }}
+                ></div>
 
-                <div className='pt-8'>
-                    <h3 className='font-bold text-lg'>{name}</h3>
-                    <p>{subTitle}</p>
-                </div>
-                
-                <a className="a absolute top-5 right-8 font-extrabold text-2xl border w-[45px] h-[45px] leading-[45px] text-center rounded-full bg-color-dark text-color-primary cursor-pointer" href={href}>
-                    in
-                </a>
-            </div>
-            <div className='py-10'>
-                <p>{description}</p>
-            </div>
+                <img
+                    src={image}
+                    alt=""
+                    className="w-full h-full object-cover relative z-10 grayscale brightness-85 contrast-110 "
+                    style={{
+                    maskImage: `url(${maskVector})`,
+                    WebkitMaskImage: `url(${maskVector})`,
+                    maskRepeat: "no-repeat",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskPosition: "center",
+                    WebkitMaskPosition: "center",
+                    maskSize: "contain",
+                    WebkitMaskSize: "contain",
+                      zIndex: 2,
+                    }}
+                />
+
+                <div
+                    className="absolute inset-0 bg-color-primary mix-blend-overlay"
+                    style={{
+                    maskImage: `url(${maskVector})`,
+                    WebkitMaskImage: `url(${maskVector})`,
+                    maskRepeat: "no-repeat",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskPosition: "center",
+                    WebkitMaskPosition: "center",
+                    maskSize: "contain",
+                    WebkitMaskSize: "contain",
+                    zIndex: 3,
+                    }}
+                ></div>
+
+            
+             {/* <div className='absolute inset-0 bg-color-primary mix-blend-overlay'></div> */}
+          </div>
+
+          <div className="pt-8">
+            <h3 className="font-bold text-lg">{name}</h3>
+            <p>{subTitle}</p>
+          </div>
+
+          <a
+            className="a absolute top-5 right-8 font-extrabold text-2xl border w-[45px] h-[45px] leading-[45px] text-center rounded-full bg-color-dark text-color-primary cursor-pointer"
+            href={href}
+          >
+            in
+          </a>
         </div>
+        <div className="py-10">
+          <p>{description}</p>
+        </div>
+      </div>
     );
 
 }
 
 export default TeamCards;
+
+
+// Cards photo
+{/* 
+      <div className="relative w-[120px] h-[120px]">
+                    <img
+                        src={image}
+                        alt=""
+                        className="w-full h-full bg-color-primary object-cover grayscale brightness-70 contrast-110"
+                        style={{
+                        maskImage: `url(${maskVector})`,
+                        WebkitMaskImage: `url(${maskVector})`,
+                        maskRepeat: "no-repeat",
+                        WebkitMaskRepeat: "no-repeat",
+                        maskPosition: "cover",
+                        WebkitMaskPosition: "cover",
+                        maskSize: "cover",
+                        WebkitMaskSize: "cover",
+                        }}
+                    />
+                    <div className="absolute inset-0 bg-color-primary mix-blend-overlay"></div>
+                    </div>
+    */}
