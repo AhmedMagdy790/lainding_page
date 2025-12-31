@@ -1,6 +1,8 @@
-# netlify.toml
-[[plugins]]
-package = "netlify-plugin-name"
+package = "@newrelic/netlify-plugin"
 
   [plugins.inputs]
-  someInput = "value"
+    newrelicAccountId = "123456"
+    newrelicLicenseKey = "12345678901234567890"
+    newrelicBrowserLicenseKey = "ABCD-0987654321"
+    newrelicAppId = "123456789"
+    enableBrowserMonitoring = true
