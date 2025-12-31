@@ -23,13 +23,14 @@ const CardsOurWorkingProcess = () => {
         <div className="">
             {ourWorkingProcess.map((item, index) => (
                 <div className={`
-                    px-14 mb-10 text-color-dark
+                    px-6 md:px-14 mb-10 text-color-dark
                     ${openCards.includes(index) ? 'bg-color-primary' : 'bg-main-color'} 
                     border border-b-6 border-color-dark rounded-4xl`}>
-                    <div className="py-15 flex gap-5 items-center">
+                    <div className="py-8 md:py-15 flex gap-5 items-center">
                         <span className="text-4xl lg:text-5xl inline-block">0{index + 1}</span>
                         <h2 className="text-2xl lg:text-3xl">{item.title}</h2>
-                        <button type="button" onClick={()=>toggleCardOurWorking(index)} className="ms-auto cursor-pointer">
+                        <button type="button" onClick={()=>toggleCardOurWorking(index)}
+                         className="ms-auto cursor-pointer">
                             {openCards.includes(index) ? <CircleMinus size={50} /> : <CirclePlus size={50} className="" />}
                         </button>
                     </div>

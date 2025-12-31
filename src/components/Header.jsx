@@ -7,7 +7,7 @@ const Header = ({title, desc}) =>{
                 <div className="mb-5">
                     <h2 className="inline text-4xl p-1 bg-color-primary box-decoration-clone">{title}</h2>
                 </div>
-                <p className="ps-12 text-lg lg:max-w-2/3">{desc}</p>
+                <p className=" lg:ps-12 text-lg lg:max-w-2/3">{desc}</p>
             </div>
         </ScrollAnmation>
     );
